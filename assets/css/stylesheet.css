@@ -6,7 +6,7 @@
 
 body {
 color: var(--tertiary-color);
-font-family: cursive;
+font-family: Arial, Helvetica, sans-serif;
 background-color: var(--primary-color);
 }
 
@@ -18,7 +18,7 @@ background-color: var(--primary-color)
 
 header h1 {
 font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 color: var(--tertiary-color);
 margin: 0;
 display: inline;
@@ -30,7 +30,7 @@ color: var(--secondary-color);
 
 header a {
 text-decoration: none;
-color: var:(var(--primary-color))
+color: (var(--primary-color))
 }
 
 header nav {
@@ -40,14 +40,18 @@ float: right;
 }
 
 header nav ul li {
-display: inline;
+display: inline
 }
 
 
 header nav ul li a {
 margin: 0 30px;
 font-weight: lighter;
-font-size: 20px;
+font-size: 25px;
+}
+
+a:hover {
+  background-color: var(--secondary-color);
 }
 
 * {
@@ -57,14 +61,14 @@ padding: 0;
 
 
 footer {
-background: var(--primary-color);
+background-color: var(--secondary-color);
 width: 100%;
 padding: 40px 35px;
 }
 
 footer h2 {
 display: inline;
-color: var(--secondary-color);
+color: var(--tertiary-color);
 font-size: 30px;
 margin: 0;
 }
@@ -76,7 +80,7 @@ text-align: right;
 }
 
 footer a {
-color: var(--secondary-color);
+color: var(--tertiary-color)
 }
 
 * {
@@ -106,37 +110,55 @@ position: relative;
 .intra {
 text-align: center;
 background-color: var(--secondary-color);
-font-size: 45px;
+font-size: 35px;
 margin-top: 35px;
 margin-bottom: 35px;
 }
 
+
+
 .photome img {
 float: right;
-height: 400px;
-width: 400px;
+height: 250px;
+width: 300px;
 margin-right: 32px;
+margin-left: 32px;
 }
 
 .intra-title {
-font-size: 45px;
+font-size: 35px;
+margin-left: 35%;
 }
 
 .intra-bio p {
-font-size: 25px;
+font-size: 20px;
+margin-right: 45px;
+margin-left: 35px;
+
 }
+
+.whynomadic {
+  text-align: center;
+  background-color: var(--secondary-color);
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  }
+  
+  .nomadic p {
+    font-size: 20px;
+    margin-left: 35px;
+    margin-right: 45px;
+    text-align: center;
+  }
 
 .second {
 text-align: center;
 background-color: var(--secondary-color);
-font-size: 45px;
+font-size: 35px;
 margin-top: 35px;
 margin-bottom: 35px;
 }
-
-
-
-
 
 .program {
 width: 100%;
@@ -148,7 +170,6 @@ margin: 0 auto 20px auto;
 background: var(--secondary-color);
 color: var(--tertiary-color);
 flex: 1;
-
 }
 
 .program img {
@@ -156,115 +177,280 @@ width: 25%;
 float: left;
 }
 
-
-
 .program-bio {
-padding: 35px;
+padding: 17px;
 float: left;
 width: 65%;
 line-height: 1.3;
 }
 
-
 .program-bio h3 {
 font-size: 28px;
 }
 
-
 .program-bio p  {
-font-size: 17px;
+font-size: 20px;
 }
-
 
 .prices {
 font-size: 25px;
 text-align: center;
 }
 
-
 .outro {
-font-size: 25px;
-text-align: center;
-background-color: var(--secondary-color);
-}
-
-.outro h3 { 
   text-align: center;
+  background-color: var(--secondary-color);
   font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  }
+
+.started {
+  text-align: center;
 }
 
-.services {
-text-align: center;
-background-color: var(--secondary-color);
-font-size: 45px;
-margin-top: 35px;
-margin-bottom: 35px;
+.contact p {
+  font-size: 25px;
+  text-align: center;
 }
+
+.contact h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
 
 .consult {
 text-align: center;
 background-color: var(--secondary-color);
-font-size: 45px;
+font-size: 35px;
 margin-top: 35px;
 margin-bottom: 35px;
 }
 
-        /* SERVICE STYLES BEGIN */
-        .services {
-          background: var(--primary-color); 
-        }
-        
-        .service-grid-wrapper {
-          display: flex;
-          width: 100%;
-          justify-content: center;
-        }
-        
-        .service-grid-container {
-          background: var(--tertiary-color);
-          width: 80%;
-          display: grid;
-          /* repeat(iterator, size) */
-          grid-template-columns: 1fr repeat(2, 4fr);
-          grid-template-rows: repeat(5, 1fr) 2fr;
-          border: 2px solid #024e76;
-          color:  #024e76;
-          font-size: 1.2rem;
-        }
-      
-        .service-grid-item {
-          padding: 15px 0;
-          border: 2px solid #024e76;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-        }
-      
-      /* specific match */
-      .service-grid-item.basic {
-          grid-column: 2 / span 1;
-        }
-      
-        .service-grid-item.both {
-          grid-column: 2 / span 2;
-        }
-      
-        .service-grid-item.cancel {
-          writing-mode: vertical-lr;
-          grid-column: 1;
-          grid-row: 1 / -1;
-          transform: rotate(180deg);
-      
-        }
-      
-      
-        .grid-head, .grid-price, .service-grid-item.cancel {
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
 
 
- 
+    /* SERVICE STYLES BEGIN */
+    .prices {
+      text-align: center;
+      background-color: var(--secondary-color);
+      font-size: 35px;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      }
+    
+    .service-grid-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .service-grid-container {
+      background: var(--tertiary-color);
+      width: 80%;
+      display: grid;
+      /* repeat(iterator, size) */
+      grid-template-columns: 1fr repeat(2, 4fr);
+      grid-template-rows: repeat(5, 1fr) 2fr;
+      border: 2px solid #024e76;
+      color:  #024e76;
+      font-size: 1.2rem;
+    }
+  
+    .service-grid-item {
+      padding: 15px 0;
+      border: 2px solid #024e76;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+  /* specific match */
+  .service-grid-item.basic {
+      grid-column: 2 / span 1;
+    }
+  
+  
+    .service-grid-item.cancel {
+      writing-mode: vertical-lr;
+      grid-column: 1;
+      grid-row: 1 / -1;
+      transform: rotate(180deg);
+  
+    }
+  
+  
+    .grid-head, .grid-price, .service-grid-item.cancel {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
 
+.test {
+  text-align: center;
+  background-color: var(--secondary-color);
+  font-size: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  }
+
+.final p {
+  text-align: center;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  }
+    
+    /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+    
+    /* Set a specific color for each brand */
+  
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+    
+  /* Twitter */
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  }
+  
+  
+  .fa-linkedin {
+  background: #007bb5;
+  color: white;
+  }
+  
+  .fa-instagram {
+  background: #125688;
+  color: white;
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+    
+
+      .hero-cta, .hero-form {
+        width: 100%;
+      }
+      
+      .hero-cta {
+        text-align: center;
+      }
+
+      .section-title {
+        width: 80%;
+      }
+      
+      .trainer {
+        flex: 0 70%;
+      }
+      
+      .contact-info iframe{
+        flex: 1 100%;
+      }
+    
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+    
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+
+
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+      }
+    
+      .section-title {
+        width: 95%;
+      }
+    
+      .intro p {
+        width: 100%;
+      }
+    
+      .trainer {
+        flex: 0 100%;
+      }
+    
+      .contact-info {
+        text-align: center;
+      }
+    
+      .contact-info > * {
+        flex: 0 100%;
+      }
+
+      .contact-form {
+        order: 3;
+      }
+
+
+  }
